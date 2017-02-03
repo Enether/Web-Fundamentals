@@ -1,0 +1,36 @@
+body table {
+    border-spacing: 0;
+    background-color: #84b3ad;
+    color: rgb(255, 255, 255);
+}
+body table thead tr th {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    background-color: rgb(144, 180, 214);
+}
+
+body table thead tr {
+    background-color: #90b4d6;
+}
+
+body table tbody tr td {
+    padding: 5px 30px 5px 10px;
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+    width: 150px;
+}
+
+body table {
+    color: rgb(51, 51, 51);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+tr:nth-child(even) td, tr:nth-child(even) th {
+    background-color: #689ad8;
+}
