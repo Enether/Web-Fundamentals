@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #e2d7aa;
+    color: #000000;
+    font-size: 16px;
+    width: 1180px;
+}
+
+img {
+    width: 1100px;
+    height: 450px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #000000;
+}
+
+span a {
+    background: url(images/bg2.jpg);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+article p span:first-of-type a::before {
+    content: url(images/comment.png);
+    position: relative;
+    right: 5px;
+    top: 7px;
+}
+
+nav {
+    margin: 30px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px;
+}
+
+nav li:first-of-type a, nav li:last-of-type a {
+    font-weight: bold;
+    color: #0a2d4a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 65px;
+}
+
+.img-container img {
+    width: 1600px;
+    height: 450px;
+    margin-top: 65px;
+}
+
+article {
+    display: inline-block;
+    float: left;
+}
+
+article img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+p:first-letter {
+    font-family: EucrosiaUPC sans-serif;
+    font-size: 40px;
+}
+
+footer {
+    margin: 0;
+    padding: 40px 0 64px 0;
+    text-align: center;
+}
