@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+body {
+    background: linear-gradient(45deg,
+        rgba(253,149,192,1) 0%,
+        rgba(195,95,204,1) 38%,
+        rgba(175,104,241,1) 66%,
+        rgba(175,104,241,1) 84%,
+        rgba(168,125,255,1) 100%);
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    background-color: #362956;
+    border-radius: 15px;
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.plan-types li {
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.plan-types li .title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.price:first-letter {
+    font-size: 2.3rem;
+}
+.price {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+.plan {
+    font-size: 0.5rem;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 17px;
+}
+.card-type {
+    background-color: #ffffff;
+}
+#basic-plan, #pro-plan, #med-plan {
+    background-size: 140px 100px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 140px;
+    height: 200px;
+    margin-top: 10px;
+}
+#basic-plan {
+    background-image: url("img/plan-background-basic.png");
+}
+#pro-plan {
+    background-image: url("img/plan-background-pro.png");
+}
+#med-plan {
+    background-image: url("img/plan-background-med.png");
+}
+
+.select-plan, .chosen-plan {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.select-plan {
+    background: linear-gradient(45deg,
+    rgba(253,149,192,1) 0%,
+    rgba(195,95,204,1) 38%,
+    rgba(175,104,241,1) 66%,
+    rgba(175,104,241,1) 84%,
+    rgba(168,125,255,1) 100%);
+}
+
+.information {
+    color: #ffffff;
+}
+.plan-title, .plan-descirption {
+    margin-left: 30px;
+    display: block;
+}
+.plan-title {
+    text-transform: capitalize;
+}
+
+.plan-descirption {
+    font-size: 0.6rem;
+    width: 330px;
+}
+.next-step {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.continue {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #751e9a 0%,#952ad8 50%,#8c20ca 51%,#be7ee8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751e9a', endColorstr='#be7ee8',GradientType=1 );
+    height: 30px;
+    text-transform: capitalize;
+}
+
+.continue:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7a531+0,ca4520+57,e8917e+100 */
+background: #f7a531; /* Old browsers */
+background: -moz-linear-gradient(left,  #f7a531 0%, #ca4520 57%, #e8917e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #f7a531 0%,#ca4520 57%,#e8917e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #f7a531 0%,#ca4520 57%,#e8917e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a531', endColorstr='#e8917e',GradientType=1 ); /* IE6-9 */
+
+}

@@ -1,0 +1,119 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Sansita';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sansita Regular'), local('Sansita-Regular'), url(https://fonts.gstatic.com/s/sansita/v1/OIg80uztPzTvmaigz6QbovY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sansita';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sansita Regular'), local('Sansita-Regular'), url(https://fonts.gstatic.com/s/sansita/v1/hJSyxUQeTBqx_NJRx-g3LA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Sansita', sans-serif;
+    background: url("images/bg.jpg");
+    background-size: cover;
+}
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,f92f2f+31,01b207+33,01b207+67,0082e5+69 */
+body > header {
+background: #ff3232; /* Old browsers */
+background: -moz-linear-gradient(left, #ff3232 0%, #f92f2f 31%, #01b207 33%, #01b207 67%, #0082e5 69%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ff3232 0%,#f92f2f 31%,#01b207 33%,#01b207 67%,#0082e5 69%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ff3232 0%,#f92f2f 31%,#01b207 33%,#01b207 67%,#0082e5 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#0082e5',GradientType=1 ); /* IE6-9 */
+    text-align: center;
+    color: yellow;
+
+}
+
+aside nav {
+    float: left;
+    background-color: rgba(245, 230, 254, 0.9);
+    border-radius: 10px;
+}
+
+aside nav header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+aside nav ul {
+    list-style: none;
+}
+aside nav ul li {
+    border-radius: 10px;
+}
+aside nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+aside nav ul li:nth-child(1):hover, aside nav ul li:nth-child(2):hover {
+    background-color: red;
+}
+
+aside nav ul li:nth-child(3):hover, aside nav ul li:nth-child(4):hover {
+    background-color: green;
+}
+
+aside nav ul li a:before {
+    content: url("images/a.png");
+}
+
+section article {
+    background-color: rgba(245, 230, 254, 0.9);
+    border-radius: 10px;
+    width: 650px;
+    margin-left: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section article footer a {
+    color: black;
+    font-size: 0.5em;
+}
+
+section article p {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+section article header {
+    border-radius: 10px;
+    line-height: 50px;
+    color: white;
+}
+
+#webColors {
+    background-color: red;
+}
+
+#RGBA {
+    background-color: green;
+}
+
+section article:last-of-type header{
+    background-color: mediumpurple;
+ }
+
+section article p:first-letter {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+section article p:first-line {
+    font-style: italic;
+    margin-bottom: 5px;
+}

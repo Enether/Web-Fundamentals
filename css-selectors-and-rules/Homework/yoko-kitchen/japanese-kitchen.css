@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-image: url("images/dark-wood.jpg");
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+main {
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 115px;
+}
+header {
+    background-image: url("images/header-page.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header h1 {
+    display: inline;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+nav {
+    background-image: url("images/header-page.jpg");
+    margin-left: 100px;
+    margin-right: 115px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li:first-of-type a, nav ul li a:hover {
+    color: black;
+}
+
+article {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+article > figure {
+    border: 1px #cccccc solid;
+    display: inline-block;
+    float: left;
+}
+
+article > figure > figcaption {
+    margin-bottom: 5px;
+}
+
+article > figure > img {
+    margin: 5px 5px;
+}
+
+article div, article p {
+    display: inline;
+}
+
+
+article div h2 {
+    text-transform: capitalize;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+article div h3 {
+    color: yellowgreen;
+    font-size: 1.2rem;
+}
+
+article p {
+    width: 100px;
+}
+
+.courses article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+aside {
+  /*float: right;*/
+  width: 30%;
+  border-left: 1px solid #cccccc;
+    padding-left: 20px;
+}
+.popular-recipes {
+    color: red;
+}
+.popular-recipes ul li{
+    margin-bottom: 10px;
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 10px;
+}
+.popular-recipes a {
+    text-decoration: none;
+    color: red;
+    margin-left: 5px;
+}
+
+.popular-recipes h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: darkgrey;
+    color: #ffffff;
+    text-align: center;
+}

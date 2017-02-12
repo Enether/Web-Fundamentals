@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    background: radial-gradient(ellipse at center,
+    rgba(192,169,145,1) 0%,
+    rgba(192,169,145,1) 59%,
+    rgba(168,143,121,1) 100%);
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-title, .header-subtitle {
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-potato {
+    width: 300px;
+}
+
+.brand {
+    float: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.nav-primary {
+    overflow: hidden;
+}
+    .nav-primary li {
+        float: right;
+        display: inline;
+        text-transform: uppercase;
+                margin-right: 30px;
+
+    }
+
+    .nav-primary li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .nav-item.button-cta {
+        border: 2px #ffffff solid;
+        border-radius: 10px;
+    }
+    .nav-item.button-cta:hover {
+        background-color: brown;
+            border: 2px brown solid;
+
+    }
+
+.features {
+    background-image: url("img/potato-background.png");
+    text-align: center;
+}
+
+body > nav {
+    color: #ffffff;
+}
+
+.features-title {
+    padding-top: 100px;
+}
+
+.feature-potatoes {
+    padding-bottom: 100px;
+}
+.features-title, .features-subtitle {
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+.buy-now {
+    background-color: #ffffff;
+}
+
+.order-title {
+    text-align: center;
+    font-weight: normal;
+}
+.potato-types {
+    text-align: center;
+}
+.potato-img {
+    width: 100px;
+    height: 100px;
+}
+
+.potato-title {
+    text-transform: capitalize;
+}
+
+.potato-types > li {
+    display: inline-block;
+    width: 100px;
+    margin-left: 100px;
+    border-right: 2px black solid;
+    padding-right: 20px;
+}
+.potato-features {
+    padding: 0;
+}
+.potato-types .potato-features li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.btn-order {
+    text-transform: uppercase;
+    color: greenyellow;
+    border: 1px greenyellow solid;
+    border-radius: 10px;
+    background: none;
+}
+
+footer {
+    background-color: #867260;
+}
