@@ -1,0 +1,37 @@
+.clearfix {
+    clear: both;
+}
+main {
+    padding-bottom: 130px;
+}
+ul {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+ul > li {
+    background-color: lightblue;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+footer {
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    padding: 50px;
+    background-color: saddlebrown;
+    border: 5px solid #47230a;
+}
+
+header {
+    font-size: 35px;
+    color: #FFFFFF;
+    display: block;
+    padding: 50px;
+    background-color: saddlebrown;
+    border: 5px solid #47230a;
+}
