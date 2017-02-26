@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+fieldset {
+  width: 500px;
+}
+
+label {
+  display: block;
+}
+
+select, input, textarea {
+  width: 60%;
+}
+
+span{
+  display: block;
+}
+textarea {
+  height: 400px;
+}
+
+select {
+  outline: none;
+  background-color: #ffffff;
+}

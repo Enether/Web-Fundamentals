@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+
+body {
+  background: #927057;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 470px;
+  margin: 50px auto 0;
+  padding: 50px 60px 70px 60px;
+  background: #d5c395;
+}
+main:before {
+  position: absolute;
+  top: -30px;
+  left: 259px;
+  background: url("img/3.png") no-repeat 0 0;
+  display: block;
+  height: 35px;
+  width: 68px;
+  content: "";
+}
+main img {
+  position: relative;
+  top: -75px;
+}
+
+input {
+  width: 80%;
+  outline: none;
+  border: none;
+  background: #efe1c4;
+  padding: 10px 10px 10px 60px;
+  font-size: 1.1em;
+  color: #927057;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+footer {
+  font-size: 1em;
+  color: #EFE1C4;
+  text-align: center;
+}
+
+input[type="submit"] {
+  outline: none;
+  border: none;
+  background: #927057;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.5em;
+  color: #d5c395;
+  border-radius: 5px;
+}
+
+.image-container.user input {
+  background: url(img/user.png) no-repeat, linear-gradient(#efe1c4, #efe1c4);
+  background-position-x: 10px;
+  background-position-y: 10px;
+}
+
+.image-container.pass input {
+  background: url(img/pass.png) no-repeat, linear-gradient(#efe1c4, #efe1c4);
+  background-position-x: 10px;
+  background-position-y: 10px;
+}
