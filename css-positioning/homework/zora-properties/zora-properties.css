@@ -1,0 +1,94 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font- awesome.min.css&#39;);
+
+@font-face {
+    font-family: OpenSans;
+    src: url('https://fonts.googleapis.com/cs?family=Open+Sans');
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url('https://fonts.googleapis.com/css?family=Comfortaa');
+}
+
+body, html {
+    font: 14px OpenSans, Arial, sans-serif;
+    background-color: #eff4f7;
+    height: 100%;
+}
+
+img.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#add-property-button {
+    float: right;
+    border-radius: 20px;
+    width: 120px;
+    color: #ffffff;
+    font-family: OpenSans, sans-serif;
+    background-color: #ff7739;
+    padding: 10px;
+    border: 0;
+}
+
+p.property-label {
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    top: -200px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0;
+    display: inline;
+}
+
+p.rented {
+    background-color: darkgrey;
+}
+
+p.success {
+    background-color: #68bc69;;
+}
+
+p.draft {
+    background-color: #91a5af;;
+}
+
+aside {
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+ul.navbar-list {
+    list-style: none;
+    text-align: start;
+}
+
+.img-container {
+    padding: 75px 0;
+    background-color: #ffffff;
+    box-shadow: 8px 6px 17px -1px rgba(0,0,0,0.26);
+}
+.img-container p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+h1.navbar-title {
+    font-family: Comfortaa, sans-serif;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+section.apartments-section article {
+    display: inline-block;
+    margin-left: 15px;
+}
