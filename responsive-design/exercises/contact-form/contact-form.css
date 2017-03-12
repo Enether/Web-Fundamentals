@@ -1,0 +1,79 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  box-sizing: border-box;
+}
+div {
+  margin: 0 auto;
+  background-color: gainsboro;
+  text-align: center;
+  padding-bottom: 10px;
+}
+h1 {
+  margin: 0 auto;
+}
+.form-input {
+  display: flex;
+}
+.left-field {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+.right-field {
+  float: right;
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  flex-basis: 100%;
+  margin: 10px;
+}
+i {
+  padding: 8px;
+  background-color: darkgrey;
+  margin-right: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+input {
+  height: 25px;
+  width: 200px;
+  border-radius: 3px;
+  margin-left: 0;
+}
+
+label span {
+  display: block;
+}
+
+textarea {
+  width: 200px;
+  height: 68px;
+}
+button {
+  display: block;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  background-color: greenyellow;
+  color: #ffffff;
+  box-shadow: none;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .left-field, .right-field {
+    display: block;
+    float: none;
+  }
+  label {
+    display: block;
+  }
+  .form-input {
+    display: block;
+  }
+}
