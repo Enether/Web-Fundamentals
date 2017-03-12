@@ -3,53 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Room Reservation</title>
-  <link href="room-reservation.css" type="css" rel="stylesheet">
+  <link href="room-reservation.css" type="text/css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Room Reservation</h1>
+    <h1 class="title">Room Reservation</h1>
   </header>
 
   <main>
     <section class="basic-info">
-      <h1>Basic Information</h1>
-      <p></p>
+      <h2 class="subtitle">Basic Information</h2>
+      <p>MymymyMymymyMymymyMymymyMymymyMymymyMymymyMymymyMymymyMymymyMymymy</p>
       <form>
-        <label>
+        <label class="search-wrapper">
           <span>Search</span>
+          <i class="fa fa-search" aria-hidden="true"></i>
           <input>
         </label>
       </form>
     </section>
+    <section class="sections-wrapper clearfix">
+      <section class="personal-info">
+        <h1>Personal Details</h1>
+        <input placeholder="First Name">
+        <input placeholder="Last Name">
+        <input placeholder="Enter email">
+      </section>
 
-    <section class="personal-info">
-      <input placeholder="First Name">
-      <input placeholder="Last Name">
-      <input placeholder="Enter email">
-    </section>
+      <section class="reservation">
+        <h2 class="subtitle">Request a reservation</h2>
 
-    <section class="reservation">
-      <label>
-        <span>Select a room</span>
-        <select>
-          <option></option>
-        </select>
-      </label>
+        <div>
+        <label>
+          <span>Select a room</span>
+          <select>
+            <option>Room 1</option>
+          </select>
+        </label>
+        </div>
 
-      <label>
-        <span>Number of Rooms</span>
-        <input type="number" value="1">
-      </label>
+        <div>
+          <label>
+            <span>Number of Rooms</span>
+            <input type="number" value="1">
+          </label>
+        </div>
 
-      <label>
-        <span>Check-In:</span>
-        <input value="dd/mm/yyyy">
-      </label>
+        <div>
+          <label>
+            <span>Check-In:</span>
+            <input value="dd/mm/yyyy">
+          </label>
+        </div>
 
-      <label>
-        <span>Check-Out:</span>
-        <input value="dd/mm/yyyy">
-      </label>
+        <div>
+          <label>
+            <span>Check-Out:</span>
+            <input value="dd/mm/yyyy">
+          </label>
+        </div>
+      </section>
     </section>
   </main>
 </body>
