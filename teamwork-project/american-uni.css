@@ -1,6 +1,10 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
 .top-header {
   display: flex;
@@ -19,6 +23,24 @@
   display: inline-block;
   flex-grow: 2;
   text-align: center;
+  text-transform: uppercase;
+}
+.top-header {
+  background: linear-gradient(rgba(255, 255, 255, 255.6), rgba(255, 255, 255, 0.6)), url(images/fireworks-bg.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.title-box h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: red;
+  text-shadow: 1px 1px 3px black;
+}
+.title-box h2 {
+  margin: 10px 0 0 0;
+  font-size: 1.7rem;
+  color: #0000b2;
+  text-shadow: 1px 1px 3px white;
 }
 
 .top-header .notification-icon-wrapper {
@@ -50,7 +72,10 @@
 }
 
 .header-menu {
-    height: 55px;
+  height: 55px;
+  background-color: #cceeff;
+  border-radius: 5px;
+  color: #a50000;
 }
 .header-menu-items {
   display: flex;
@@ -58,7 +83,7 @@
   align-items: center;
   height: 100%;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   width: 100%;
 }
 .header-menu-item {
@@ -66,6 +91,11 @@
   list-style: none;
   padding: 15px 40px;
   text-align: center;
+  height: 100%;
+}
+.header-menu-item:hover {
+  background-color: #008da5;
+  color: #ffffff;
 }
 
 /* Articles */
