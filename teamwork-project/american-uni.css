@@ -1,6 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
   box-sizing: border-box;
@@ -145,26 +146,50 @@ section.my-courses {
   float: right;
   text-align: center;
   height: 400px;
+  font-family: 'Lato', sans-serif;
 }
 .courses {
   overflow: scroll;
   overflow-x: auto;
   overflow-y: auto;
   height: 100%;
+  border: 2px solid #d90000;
 }
 .course-box {
   text-align: left;
   display: flex;
   align-items: center;
+  padding: 0px 10px;
+  background-color: #fceceb;
+  text-shadow: 1px 1px 5px white;
+}
+
+.course-box:nth-child(even) {
+  background-color: #f5cfcd;
+}
+
+.course-box:hover {
+  background-color: #f5a5a2;
+}
+
+.courses-header {
+  width: 100%;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #d90000;
+  color: #ffffff;
 }
 .course-box p {
   display: inline-block;
   width: 80%;
-  word-break: break-all;
+  overflow-wrap: break-word;
+  text-transform: capitalize;
 }
-.course-box i {
-  margin-left: 5px;
+.course-box-link {
   font-size: 20px;
+  margin-left: 5px;
+  text-align: right;
+  width: 10%;
 }
 .staff {
   display: block;
