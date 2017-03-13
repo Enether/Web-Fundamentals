@@ -112,13 +112,56 @@ section.articles {
 section.my-courses {
   width: 29%;
   display: inline-block;
-
+  float: right;
+  text-align: center;
+  height: 400px;
 }
-section.articles:after, section.my-courses:after {
-  content: "";
-  display: table;
-  clear: both;
+.courses {
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
 }
+.course-box {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.course-box p {
+  display: inline-block;
+  width: 80%;
+  word-break: break-all;
+}
+.course-box i {
+  margin-left: 5px;
+  font-size: 20px;
 }
 .staff {
+  display: block;
 }
+.staff >  h1 {
+  text-align: center;
+}
+.people {
+  margin: 0 auto;
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+  flex-direction: row;
+}
+.teacher {
+  display: inline-block;
+  width: 210px;
+}
+.teacher img {
+  width: 200px;
+  height: 100px;
+}
+
+ .slick-slide {
+    margin: 0 27px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -27px;
+  }
