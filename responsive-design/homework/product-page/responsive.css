@@ -1,0 +1,64 @@
+@media all and (max-width: 640px) {
+  #header-top-area > h2 {
+    display: none;
+  }
+  #header-top-area {
+    display: block;
+    height: 70px;
+  }
+  #header-middle-area {
+    display: block;
+  }
+  #product-menu {
+    visibility: hidden;
+      display: block;
+  width: 1px;
+  }
+  #product-menu:hover {
+    display: block;
+    visibility: visible;
+        width: 100%;
+
+  }
+  #product-menu ul li .submenu {
+    visibility: hidden;
+    display: block;
+  }
+  #product-menu ul li .submenu:hover {
+    visibility: visible;
+  }
+  #header-bottom-area {
+    display: none;
+  }
+  .wrap {
+    width: 100%;
+  }
+  footer .wrap {
+    text-align: center;
+
+  }
+  #products-liked-list ul, #products-suggestions-list ul {
+    text-align: center;
+  }
+  footer {
+    height: 260px;
+  }
+  .wrap > .box {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+  }
+  .wrap > .box > strong {
+    display: inline-block;
+  }
+  .share, .tag {
+    color: #ffffff;
+  }
+  .wrap > .email-newsletter {
+    text-align: center;
+    display: block;
+  }
+  .wrap > .email-newsletter span {
+    display: block;
+  }
+}

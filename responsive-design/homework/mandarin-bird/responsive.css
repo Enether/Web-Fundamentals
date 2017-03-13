@@ -1,0 +1,34 @@
+@media all and (max-width: 1200px) {
+  #wrapper {
+    width: 100%;
+  }
+    #wrapper header, #wrapper main, #wrapper section, #wrapper aside {
+      width: 90%;
+    }
+    header nav ul {
+      display: flex;
+
+    }
+    header nav ul li {
+      flex-grow: 1;
+      width: 150px;
+    }
+}
+
+@media all and (max-width: 730px) {
+  main section div > div {
+    float: none;
+    display: block;
+    background-color: #5a8519;
+  }
+  main section div > div > img {
+    height: auto;
+  }
+  main section div {
+    height: 100%;
+    text-align: center;
+  }
+  article h1, article h2 {
+    text-align: center;
+  }
+}
