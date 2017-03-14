@@ -52,22 +52,26 @@ main {
   text-shadow: 1px 1px 3px white;
 }
 
-.top-header .notification-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: inherit;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
+/*.top-header .notification-icon-wrapper {*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*position: inherit;*/
+  /*width: 100px;*/
+  /*height: 100px;*/
+  /*text-align: center;*/
+/*}*/
+/*.top-header .notification-icon-wrapper a {*/
+  /*width: 60%;*/
+  /*height: 60%;*/
+/*}*/
+/*.top-header .notification-icon-wrapper img {  !* Notification Icon*!*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*display: inline;*/
+  /*vertical-align: middle;*/
+/*}*/
 
-.top-header .notification-icon-wrapper img {  /* Notification Icon*/
-  width: 60%;
-  height: 60%;
-  display: inline;
-  vertical-align: middle;
-}
 .top-header .profile-photo {
   display: inline-block;
   width: 100px;
@@ -107,8 +111,17 @@ main {
   text-align: center;
   height: 100%;
 }
+
+.header-menu-item a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
+  color: #a50000;
+}
 .header-menu-item:hover {
   background-color: #008da5;
+}
+.header-menu-item:hover a {
   color: #ffffff;
 }
 
@@ -177,6 +190,7 @@ section.articles {
 
 section.my-courses {
   width: 29%;
+  max-width: 400px;
   display: inline-block;
   float: right;
   text-align: center;
@@ -190,6 +204,10 @@ section.my-courses {
   height: 100%;
   border: 2px solid #d90000;
 }
+.courses a {
+  color: inherit;
+  text-decoration: none;
+}
 .course-box {
   text-align: left;
   display: flex;
@@ -199,7 +217,7 @@ section.my-courses {
   text-shadow: 1px 1px 5px white;
 }
 
-.course-box:nth-child(even) {
+.course-boxes-wrapper a:nth-child(even) .course-box {
   background-color: #f5cfcd;
 }
 
