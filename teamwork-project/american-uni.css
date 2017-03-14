@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+
 
 * {
   box-sizing: border-box;
@@ -245,6 +247,119 @@ section.my-courses {
   text-align: right;
   width: 10%;
 }
+
+
+/* Partners */
+.wrapper {
+      display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    height: 90%;
+}
+
+.p-header {
+  position: relative;
+  padding: 40px 15px 75px;
+  background-image: url(images/business-partners.jpg);;
+  background-color: #192431;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  height: 900px;
+}
+
+.p-header-content {
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.partners-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partner-box {
+  border: 3px solid red;
+  width: 306px;
+  height: 206px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  transition: all .2s ease-in-out;
+
+}
+
+.partner-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px red;
+}
+
+.partner-box img {
+  width: 300px;
+  height: 200px;
+}
+
+.p-header-separator::before {
+  content: '';
+  background-color: #f5133f;
+  width: 640px;
+  height: 3px;
+  margin: 15px auto 25px;
+  border: none;
+  display: inline-block;
+}
+
+.p-header-separator {
+  margin-bottom: 50px;
+}
+.p-header:after {
+  background-color: #192431;
+  opacity: .8;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  content: '';
+}
+
+h1.p-header-title {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+
+.p-header::after, .p-header-bottom {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+}
+.p-header-bottom {  /* The white bar under the partners header*/
+  width: 70%;
+  height: 35px;
+  background-color: #fff;
+  z-index: 30;
+}
+.p-header-bottom::after {  /* The smooth transition from the white bar to the partners header*/
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 45px;
+  height: 35px;
+  right: -45px;
+  background-image: url("images/our-partners-white-triangle-annexation.svg");
+}
+
 
 /* Staff */
 
