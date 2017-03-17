@@ -455,6 +455,7 @@ h1.p-header-title, h1.staff-title {
 .teacher img {
   border: 3px solid red;
   transition: all ease 0.5s;
+  margin: 0 auto;
 }
 .teacher img:hover {
   opacity: 0.9;
@@ -641,4 +642,117 @@ footer .footer {
 .social-btns .btn .fa {
   font-size: 38px;
   vertical-align: middle;
+}
+
+@media all and (max-width: 1024px) {
+  main, header, footer {
+    max-width: 1024px;
+  }
+  .staff-wrapper {
+    height: 600px;
+  }
+  .p-header {
+    height: 850px;
+  }
+
+  section.articles {
+    display: block;
+    padding: 50px;
+    width: 100%;
+  }
+  section.my-courses {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .my-courses .courses {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .partners-wrapper {
+    justify-content: space-around;
+  }
+
+  .p-header {
+    height: 1100px;
+  }
+
+  .header-menu {
+    height: inherit;
+  }
+  .header-menu-items {
+    display: block;
+  }
+  .header-menu-item {
+    text-align: left;
+    padding-left: 65px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  footer .footer {
+    display: block;
+  }
+  .footer-box {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: inherit;
+    margin-bottom: 50px;
+  }
+  .footer-box ul {
+    width: 300px;
+  }
+  .footer-box .footer-header {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .footer-box .footer-header h1 {
+    font-size: 3rem;
+  }
+  .footer-box li a {
+    font-size: 1.9rem;
+  }
+
+  .social-btns {
+    transform: scale(1.5);
+  }
+}
+
+@media all and (max-width: 640px) {
+  .partners-wrapper {
+    display: block;
+  }
+  .partner-box {
+    margin: 35px auto;
+  }
+  .p-header {
+    height: 1900px;
+  }
+
+  .p-header-separator::before, .staff-header-separator::before {
+    width: 320px;
+  }
+  .staff-wrapper {
+    height: 650px;
+  }
+  .article-picture, .article-title {
+    display: block;
+    width: 100%;
+  }
+  .article-content {
+    margin-top: 100px;
+  }
+  /*.p-header-separator::before, .staff-header-separator::before {*/
+      /*width: 340px;*/
+    /*display: block;*/
+  /*}*/
 }
