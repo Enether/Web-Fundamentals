@@ -76,7 +76,7 @@ main {
 
 .header-menu {
   height: 55px;
-  background-color: #cceeff;
+  background-color: #5c0000;
   border-radius: 5px;
   color: #a50000;
 }
@@ -102,7 +102,7 @@ main {
   text-decoration: none;
   font-size: 1.3rem;
   font-family: 'Lato', sans-serif;
-  color: #a50000;
+  color: #ffffff;
 }
 .header-menu-item:hover {
   background-color: #008da5;
@@ -115,6 +115,7 @@ main {
 section.articles {
   width: 70%;
   display: inline-block;
+  margin-left: 10px;
 }
 
 .articles article {
@@ -205,6 +206,7 @@ section.my-courses {
   overflow-y: auto;
   height: 100%;
   border: 2px solid #d90000;
+  margin-right: 20px;
 }
 .courses a {
   color: inherit;
@@ -218,6 +220,11 @@ section.my-courses {
   background-color: #fceceb;
   text-shadow: 1px 1px 5px white;
 }
+.course-box p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
 
 .course-boxes-wrapper a:nth-child(even) .course-box {
   background-color: #f5cfcd;
@@ -233,6 +240,10 @@ section.my-courses {
   display: inline-block;
   background-color: #d90000;
   color: #ffffff;
+}
+.courses-header h1 {
+    font-size: 1.5rem;
+
 }
 .course-box p {
   display: inline-block;
@@ -442,6 +453,7 @@ h1.p-header-title, h1.staff-title {
 }
 .teacher img {
   border: 3px solid red;
+  transition: all ease 0.5s;
 }
 .teacher img:hover {
   opacity: 0.9;
