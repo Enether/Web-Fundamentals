@@ -40,7 +40,7 @@ main {
   text-transform: uppercase;
 }
 .top-header {
-  background: linear-gradient(rgba(255, 255, 255, 255.6), rgba(255, 255, 255, 0.6)), url(images/fireworks-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 255), rgba(255, 255, 255, 0.6)), url(images/fireworks-bg.jpg) no-repeat;
   background-size: cover;
   border-radius: 10px;
 }
@@ -206,6 +206,7 @@ section.my-courses {
   overflow-y: auto;
   height: 100%;
   border: 2px solid #d90000;
+  margin-top: 20px;
   margin-right: 20px;
 }
 .courses a {
@@ -570,17 +571,14 @@ footer .footer {
 .social-btns .btn,
 .social-btns .btn:before,
 .social-btns .btn .fa {
-  -webkit-transition: all 0.35s;
   transition: all 0.35s;
-  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
 .social-btns .btn:before {
   top: 90%;
   left: -110%;
 }
 .social-btns .btn .fa {
-  -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 .social-btns .btn.facebook:before {
@@ -610,8 +608,7 @@ footer .footer {
 .social-btns .btn:focus .fa,
 .social-btns .btn:hover .fa {
   color: #fff;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .social-btns {
   height: 90px;
@@ -639,8 +636,7 @@ footer .footer {
   width: 120%;
   height: 120%;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .social-btns .btn .fa {
   font-size: 38px;
