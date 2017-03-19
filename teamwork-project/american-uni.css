@@ -443,8 +443,8 @@ h1.p-header-title, h1.staff-title {
 }
 .people {
   margin: 40px auto;
-  display: flex;
-  width: 70%;
+  display: block;
+  /*width: 70%;*/
   height: 200px;
   overflow: hidden;
   flex-direction: row;
@@ -698,6 +698,21 @@ footer .footer {
   }
 }
 
+/*@media all and (max-width: 780px) {*/
+  /*.people {*/
+    /*display: block;*/
+    /*overflow: inherit;*/
+    /*height: 100%;*/
+  /*}*/
+  /*.teacher {*/
+    /*display: block;*/
+  /*}*/
+
+  /*.staff-wrapper {*/
+    /*height: 1380px;*/
+  /*}*/
+/*}*/
+
 @media all and (max-width: 768px) {
   footer .footer {
     display: block;
@@ -723,12 +738,9 @@ footer .footer {
     font-size: 1.9rem;
   }
 
-  .social-btns {
-    transform: scale(1.5);
-  }
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 690px) {
   .partners-wrapper {
     display: block;
   }
@@ -788,7 +800,7 @@ footer .footer {
   }
 }
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 550px) {
   header .top-header {
     flex-direction: column;
     justify-content: center;
