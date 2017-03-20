@@ -1,9 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
-
 
 
 * {
@@ -12,6 +9,7 @@
   margin: 0;
   padding: 0;
 }
+
 header {
   max-width: 1900px;
   margin: 0 auto;
@@ -20,8 +18,15 @@ main {
   max-width: 1900px;
   margin: 0 auto;
 }
+
+
+/* Header */
+
 .top-header {
   display: flex;
+  background: linear-gradient(rgba(255, 255, 255, 255), rgba(255, 255, 255, 0.6)), url(images/fireworks-bg.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 .top-header .american-flag {
   display: inline-block;
@@ -39,18 +44,14 @@ main {
   text-align: center;
   text-transform: uppercase;
 }
-.top-header {
-  background: linear-gradient(rgba(255, 255, 255, 255), rgba(255, 255, 255, 0.6)), url(images/fireworks-bg.jpg) no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-.title-box h1 {
+
+.title-box h2 {
   margin: 0;
   font-size: 2.5rem;
   color: red;
   text-shadow: 1px 1px 3px black;
 }
-.title-box h2 {
+.title-box h3 {
   margin: 10px 0 0 0;
   font-size: 1.7rem;
   color: #0000b2;
@@ -63,8 +64,7 @@ main {
   height: 100px;
   border-radius: 50%;
 }
-
-.profile-photo:hover {
+.top-header .profile-photo:hover {
   opacity: 0.7;
   border: 3px solid #ff593f;
 }
@@ -94,7 +94,7 @@ main {
   list-style: none;
   padding: 15px 40px;
   text-align: center;
-  height: 100%;
+  /*height: 100%;*/
   cursor: pointer;
 }
 
@@ -137,7 +137,7 @@ section.articles {
   text-decoration: none;
   color: inherit;
 }
-.articles article a:hover *{
+.articles article a:hover * {
   text-decoration: underline;
 }
 
@@ -154,19 +154,20 @@ section.articles {
 }
 .article-picture img {
   max-height: 150px;
+  width: 100%;
+  height: 100%;
 }
 
 .article-title {
   height: 100%;
   width: 60%;
-  display: inline-block;
   float: right;
   padding: 10px;
   word-break: break-all;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
 }
-.article-title h1 {
+.article-title h2 {
   font-size: 2.5rem;
   word-break: normal;
 }
@@ -180,15 +181,12 @@ section.articles {
   font-style: italic;
   color: #e50000;
 }
-.article-picture img {
-  width: 100%;
-  height: 100%;
-}
 
 .article-content {
   height: 70%;
   padding-left: 10px;
 }
+
 
 /* My Courses */
 
@@ -218,13 +216,18 @@ section.my-courses {
   text-align: left;
   display: flex;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0 10px;
   background-color: #fceceb;
   text-shadow: 1px 1px 5px white;
 }
 .course-box p {
   font-size: 1.3rem;
   line-height: 2;
+  display: inline-block;
+  flex-grow: 1;
+  width: 80%;
+  overflow-wrap: break-word;
+  text-transform: capitalize;
 }
 
 
@@ -243,17 +246,11 @@ section.my-courses {
   background-color: #d90000;
   color: #ffffff;
 }
-.courses-header h1 {
+.courses-header h2 {
     font-size: 1.5rem;
 
 }
-.course-box p {
-  display: inline-block;
-  flex-grow: 1;
-  width: 80%;
-  overflow-wrap: break-word;
-  text-transform: capitalize;
-}
+
 .course-box-link {
   font-size: 20px;
   margin-left: 5px;
@@ -330,7 +327,7 @@ section.my-courses {
 }
 .p-header-lead, .staff-title-lead {
   font-size: 1.4rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .p-header-separator, .staff-header-separator {
   margin-bottom: 50px;
@@ -344,7 +341,7 @@ section.my-courses {
   content: '';
 }
 
-h1.p-header-title, h1.staff-title {
+h2.p-header-title, h2.staff-title {
   font-size: 4rem;
   color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -356,7 +353,7 @@ h1.p-header-title, h1.staff-title {
   bottom: 0;
   left: 0;
   position: absolute;
-  content: '';
+  content: '';.p-header-bo
 }
 .p-header-bottom {  /* The white bar under the partners header*/
   width: 70%;
@@ -365,40 +362,37 @@ h1.p-header-title, h1.staff-title {
   z-index: 30;
 }
 .p-header-bottom::after {  /* The smooth transition from the white bar to the partners header*/
+  background-image: url("images/our-partners-white-triangle-annexation.svg");
+  right: -45px;
+}
+
+.p-header-bottom::after, .staff-wrapper-top::before { /* The smooth transition from the white bar to the header */
   content: '';
   position: absolute;
   top: 0;
   display: block;
   width: 45px;
   height: 35px;
-  right: -45px;
-  background-image: url("images/our-partners-white-triangle-annexation.svg");
 }
 
-.staff-wrapper::before, .staff-wrapper-bottom {
+/* Staff */
+
+.staff-wrapper::before, .staff-wrapper-top {
   top: -1px;
   right: 0;
   position: absolute;
   content: '';
 }
-.staff-wrapper-bottom {  /* The white bar under the partners header*/
+.staff-wrapper-top {  /* The white bar over the Staff header*/
   width: 70%;
   height: 35px;
   background-color: #fff;
   z-index: 30;
 }
-.staff-wrapper-bottom::before {  /* The smooth transition from the white bar to the partners header*/
-  content: '';
-  position: absolute;
-  top: 0;
-  display: block;
-  width: 45px;
-  height: 35px;
-  left: -40px;
+.staff-wrapper-top::before {  /* The smooth transition from the white bar to the Staff header*/
   background-image: url("images/our-staff-white-triangle-annexation.svg");
+  left: -40px;
 }
-/* Staff */
-
 
 .staff {
   display: block;
@@ -437,14 +431,14 @@ h1.p-header-title, h1.staff-title {
   position: relative;
   z-index: 20;
 }
-.staff-wrapper >  h1 {
+.staff-wrapper >  h2 {
   text-align: center;
   font-size: 3rem;
 }
+
 .people {
   margin: 40px auto;
   display: block;
-  /*width: 70%;*/
   height: 200px;
   overflow: hidden;
   flex-direction: row;
@@ -457,27 +451,26 @@ h1.p-header-title, h1.staff-title {
   border: 3px solid red;
   transition: all ease 0.5s;
   margin: 0 auto;
+  width: 300px;
+  height: 200px;
 }
 .teacher img:hover {
   opacity: 0.9;
   box-shadow: 0 0 50px red;
 }
 
-.teacher img {
-  width: 300px;
-  height: 200px;
+
+.slick-slide {
+  margin: 0 27px;
+  outline: none;
+}
+  /* the parent */
+.slick-list {
+  margin: 0 -27px;
 }
 
 
- .slick-slide {
-    margin: 0 27px;
-   outline: none;
-  }
-  /* the parent */
-  .slick-list {
-    margin: 0 -27px;
-  }
-
+/* Footer */
 
 
 footer {
@@ -511,10 +504,10 @@ footer .footer {
 }
 
 .footer-box li a {
-    font-size: 1.1rem;
-
+  font-size: 1.1rem;
 }
 
+/* Shutter in effect animation for the footer menu */
 .shutter-in {
   background-color: #f5133f;
   display: inline-block;
@@ -541,7 +534,7 @@ footer .footer {
   color: white;
 }
 .shutter-in:hover:before{
-  /* Hides the fakely-original background in the :before element*/
+  /* Hides the fake-original background in the :before element*/
   transform: scaleX(0);
 }
 
@@ -550,11 +543,7 @@ footer .footer {
   color: inherit;
 }
 
-.footer-box .footer-header h1 {
-  font-size: 2rem;
-}
-
-.footer-box .footer-header i {
+.footer-box .footer-header h2, .footer-box .footer-header i {
   font-size: 2rem;
 }
 
@@ -568,7 +557,7 @@ footer .footer {
   display: inline-block;
 }
 
-
+/* Footer Social Buttons */
 
 .social-btns .btn,
 .social-btns .btn:before,
@@ -581,7 +570,7 @@ footer .footer {
   left: -110%;
 }
 .social-btns .btn .fa {
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 .social-btns .btn.facebook:before {
   background-color: #3b5998;
@@ -645,6 +634,9 @@ footer .footer {
   vertical-align: middle;
 }
 
+
+/* Responsive */
+
 @media all and (max-width: 1024px) {
   main, header, footer {
     max-width: 1024px;
@@ -664,9 +656,7 @@ footer .footer {
   section.my-courses {
     max-width: none;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 80px;
+    margin: 25px auto 80px;
     display: block;
     float: none;
     text-align: center;
@@ -674,6 +664,20 @@ footer .footer {
   .my-courses .courses {
     width: 600px;
     margin: 0 auto;
+    max-height: 350px;
+    padding-bottom: 10px;
+  }
+  .header-menu-items {
+    display: block;
+  }
+
+  .header-menu {
+    height: inherit;
+  }
+
+  .header-menu-item {
+    text-align: left;
+    padding-left: 65px;
   }
 }
 
@@ -681,37 +685,16 @@ footer .footer {
   .partners-wrapper {
     justify-content: space-around;
   }
-
   .p-header {
     height: 1100px;
   }
-
-  .header-menu {
-    height: inherit;
-  }
-  .header-menu-items {
-    display: block;
-  }
-  .header-menu-item {
-    text-align: left;
-    padding-left: 65px;
-  }
 }
 
-/*@media all and (max-width: 780px) {*/
-  /*.people {*/
-    /*display: block;*/
-    /*overflow: inherit;*/
-    /*height: 100%;*/
-  /*}*/
-  /*.teacher {*/
-    /*display: block;*/
-  /*}*/
-
-  /*.staff-wrapper {*/
-    /*height: 1380px;*/
-  /*}*/
-/*}*/
+@media all and (max-width: 940px) {
+  .staff-wrapper {
+    height: 650px;
+  }
+}
 
 @media all and (max-width: 768px) {
   footer .footer {
@@ -719,10 +702,9 @@ footer .footer {
   }
   .footer-box {
     display: block;
-    margin: 0 auto;
     width: 500px;
     height: inherit;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
   }
   .footer-box ul {
     width: 300px;
@@ -731,19 +713,14 @@ footer .footer {
     width: 300px;
     margin: 0 auto;
   }
-  .footer-box .footer-header h1 {
+  .footer-box .footer-header h2 {
     font-size: 3rem;
   }
   .footer-box li a {
     font-size: 1.9rem;
   }
+}
 
-}
-@media all and (max-width: 940px) {
-  .staff-wrapper {
-    height: 650px;
-  }
-}
 @media all and (max-width: 690px) {
   .partners-wrapper {
     display: block;
@@ -766,10 +743,6 @@ footer .footer {
   .article-content {
     margin-top: 100px;
   }
-  /*.p-header-separator::before, .staff-header-separator::before {*/
-      /*width: 340px;*/
-    /*display: block;*/
-  /*}*/
 }
 
 @media all and (max-width: 600px) {
@@ -793,6 +766,14 @@ footer .footer {
   }
 }
 
+@media all and (max-width: 550px) {
+  header .top-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media all and (max-width: 454px) {
   .p-header {
     height: 1980px;
@@ -803,14 +784,6 @@ footer .footer {
 
   .staff-wrapper {
     height: 680px;
-  }
-}
-
-@media all and (max-width: 550px) {
-  header .top-header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -834,5 +807,5 @@ footer .footer {
   }
   .p-header {
     height: 2087px;
-}
+  }
 }
