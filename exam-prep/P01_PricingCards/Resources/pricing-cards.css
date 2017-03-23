@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=OpenSans:400,900');
+
+body {
+  background: #d6cfd4;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.pricing-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  height: 500px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+.pricing-card:hover {
+  background: white;
+}
+
+
+.card-title {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.card-desc {
+  font-size: 14px;
+}
+
+.free-button, .paid-button {
+  margin-bottom: auto;
+  align-self: flex-end;
+  border-radius: 22px;
+  box-shadow: none;
+  border: none;
+  padding: 10px 45px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.free-button {
+  background-color: #5ec5cb;
+}
+.paid-button {
+  background-color: #cb6b34;
+}
+.paid-button:hover {
+  background-color: #cb480e;
+}
+
+.free-price, .price {
+  margin: 100px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.free-price{
+  font-size: 25px;
+  color: #373a37;
+}
+.price {
+  font-size: 28px;
+  color: #be7900;
+}
+
+
+.free-button:hover, .paid-button:hover {
+  cursor: pointer;
+}
