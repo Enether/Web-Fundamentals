@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+   CSS Reset
+*/
+@import url('https://fonts.googleapis.com/css?family=Kreon:400,700|Open+Sans:400,700')
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+		box-sizing: border-box;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1;
+	margin: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+  height: 500px;
+  background: url("img/header-background.jpg");
+	background-size: cover;
+}
+
+main {
+}
+.site-title {
+	display: inline-block;
+	margin-right: 50px;
+	margin-left: 20px;
+	font-size: 32px;
+	font-family: 'Kreon';
+	color: white;
+	font-weight: 400;
+}
+nav {
+	display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+	margin-right: 75px;
+	color: white;
+}
+nav .nav-link {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 15px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+nav .nav-link:hover {
+	background: #ff314c;
+}
+.site-subtitle {
+	margin-top: 200px;
+	margin-left: 20px;
+	color: white;
+}
+.site-subtitle h3 {
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.site-subtitle h1 {
+	font-size: 50px;
+	line-height: 60px;
+	font-family: 'Kreon';
+	font-weight: bold;
+	width: 50%;
+}
+
+.first-box, .second-box {
+	width: 49%;
+	height: 250px;
+	flex-grow: 1;
+	display: flex;
+}
+.img-container {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	margin-left: 40px;
+}
+.img-container img {
+	padding-top: 40px;
+}
+
+.content-container {
+	color: white;
+}
+.content-container h2 {
+	margin-top: 30px;
+}
+.boxes-container .content-container > p {
+	margin-top: 30px;
+	line-height: 20px;
+	display: block;
+}
+.first-box h2, .second-box h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+		display: inline-block;
+
+	/*margin-top: 30px;*/
+	/*margin-left: 120px;*/
+}
+.first-box p, .second-box p {
+	display: inline-block;
+	/*margin-top: 100px;*/
+	/*margin-left: 120px;*/
+	/*margin-right: 50px;*/
+}
+.boxes-container {
+	background: red;
+	display: flex;
+
+}
+.first-box {
+	background: #ff4e5c;
+}
+
+.second-box {
+	background: #47bebe;
+}
+
+.perks-header {
+	height: 250px;
+}
+
+.perks-header h2 {
+	font-family: 'Kreon';
+	font-size: 40px;
+	font-weight: 400;
+	padding: 20px;
+}
+
+.perks-header p {
+	margin-left: 20px;
+	margin-top: 35px;
+	font-family: 'Kreon';
+	font-size: 20px;
+	font-weight: 400;
+	color: #5d5959;
+	width: 58%;
+}
+.perks {
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.perks-container {
+	display: flex;
+	margin-left: -1px;
+	justify-content: space-between;
+}
+.perks-container .perk:first-of-type {
+	padding-left: 60px;  /* to give a margin to the .perks-container */
+}
+.perk {
+	padding: 15px;
+	border-left: 1px solid darkgray;
+	padding-left: 20px;
+}
+.perk p {
+	line-height: 20px;
+}
+.quote {
+	background: red;
+	height: 100px;
+	display: flex;
+	 align-items: center;
+  justify-content: center;
+}
+.quote p {
+	display: inline-block;
+	margin: 41px 130px;
+	color: white;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Kreon';
+}
+.quote button {
+	background: white;
+	border: none;
+	border-radius: 15px;
+	padding: 15px 15px;
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 40px;
+	width: 171px;
+	margin-left: 345px;
+}
+
+.quote button:hover {
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+
