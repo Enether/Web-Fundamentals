@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 10px;
+}
+p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.image-container input {
+  width: 80%;
+  outline: none;
+  font-size: 1.1em;
+  color: #927057;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid darkgray;
+  margin-bottom: 30px;
+  height: 30px;
+}
+.image-container {
+  position: relative;
+}
+.image-container i {
+    position: absolute;
+    left: 9px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    color: #595757;
+}
+.image-container .red-marker {
+  color: red;
+}
+[class*="fa-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+form {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  width: 600px;
+}
+.form-header {
+  background: #ff7633;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-header p {
+  margin: 0 auto;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+form span.fa {
+  background-color: rgba(189, 188, 181, 0.62);
+  color: #606468;
+  display: block;
+  float: left;
+  line-height: 34px !important;
+  font-size: 15px !important;
+  text-align: center;
+  width: 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 34px;
+}
+
+form textarea {
+      width: 197px;
+    height: 84px;
+}
+.send-button {
+  background: #ff7633;
+  height: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+}
+.send-button:hover {
+  background: gray;
+}
+.send-button input {
+  margin: 0 auto;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+}
