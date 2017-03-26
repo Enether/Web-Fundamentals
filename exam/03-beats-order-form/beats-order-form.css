@@ -1,0 +1,105 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900');
+
+body {
+  background: #344272;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.beats-form {
+  width: 1000px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.beats-form .first-form-part {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.beats-form .second-form-part {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+.form-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.form-input input {
+  border: none;
+  padding-left: 10px;
+}
+.form-input input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: lightgrey;
+  font-weight: 400;
+  font-size: 17px;
+}
+.form-input {
+  flex: 1 0 50%;
+  margin-top: 20px;
+}
+.input-wrapper {
+  border-bottom: 1px solid lightgrey;
+  width: 250px;
+  padding-bottom: 7px;
+  display: flex;
+    justify-content: space-around;
+}
+.input-wrapper span {
+  font-size: 23px;
+    color: #616161;
+}
+.form-input:first-child {
+   flex: 0 1 100%;
+}
+
+
+.form-header {
+  height: 30%;
+  padding-right: 80px;
+}
+.form-header .beats-title, .form-header .beats-price {
+  text-transform: uppercase;
+}
+
+.form-header .beats-title {
+  text-align: right;
+  font-size: 35px;
+  margin-bottom: 0;
+  color: #929292;
+}
+.button-space {
+  width: 66%;
+}
+.form-header .beats-price {
+  font-size: 35px;
+  margin-top: 0;
+  text-align: right;
+  color: #727272;
+}
+
+.cont-button {
+  background-color: #4d4d68;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 50px
+}
+
+.beats-image {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 80px;
+}
+.beats-image img {
+  height: 550px;
+}
