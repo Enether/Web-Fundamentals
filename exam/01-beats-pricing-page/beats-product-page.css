@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+body {
+  background: #e5e5e5;
+  font-family: 'Lato', sans-serif;
+}
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.product {
+  width: 400px;
+  height: 500px;
+  background: white;
+  margin-left: 50px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 130px;
+  height: 160px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.product .product-header {
+  text-align: center;
+}
+.product .product-header .product-title {
+  text-transform: uppercase;
+}
+
+.product .product-content {
+  text-align: center;
+}
+
+.product-content p.product-info {
+  margin: 60px 0;
+  padding: 0px 15px;
+}
+
+.product-content .buy-button {
+  background: none;
+  border: 3px solid black;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.buy-button:hover {
+  cursor: pointer;
+}
+.buy-button:focus {
+  outline: none;
+}
+
+span.bold-text {
+  font-weight: bold;
+}
